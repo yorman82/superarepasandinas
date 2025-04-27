@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Las Super Arepas Andinas</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/menu.js"></script>
+ 
+</head>
+<body>  
+  <header class="responsive-banner">  
+</header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="quienes_somos.html">Quienes Somos</a>
+    <a href="./menu3.html">Menú</a>
+    <a href="./contacto.html">Contacto</a>
+  </nav>
+  <div class="container">
+    <div class="title-section">
+      <h1>Las Super Arepas Andinas, el otro pan diario de Venezuela</h1>          
+      
+      <div class="image-grid">
+      <div class="image-item">
+        <img src="./img/paquete1.png" alt="Calidad">
+        <p><strong>Nuestra presentación.</strong></p>
+        <p>
+          Presentación de 5 Arepas Precio 3$ al cambio BCV          
+        </p>
+      </div>
+
+      <div class="image-item">
+        <img src="./img/paquete2.png" alt="Origen Andino">
+        <p><strong>Para una familia numerosa.</strong></p>
+        <p>
+          Presentación de 10 Arepas Precio 5$ al cambio BCV 
+        </p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px;">
+  <p style="margin: 0;">Contacto para pedidos</p>
+  <a class="btn" href="./contacto.html">Ver</a>
+</div>
+    </div>
+      <p><h1>Descubre la esencia de nuestras arepas andinas</h1></p>
+    </div>
+
+    <div class="image-grid">
+
+      <div class="image-item">
+        <img src="./img/harina2.png" alt="Origen">
+        <p><strong>Un Viaje de Sabor.</strong></p>
+        <p>
+          Cada arepa que preparamos cuenta una historia
+          <span class="extra-text" style="display: none;">
+            desde la selección cuidadosa de la harina de trigo hasta el momento en que llega a tu mesa
+          </span>
+          <a href="#" class="toggle-link" onclick="toggleText(event)">más</a>
+        </p>
+      </div>
+
+      <div class="image-item">
+        <img src="./img/img22.jpg" alt="Calidad">
+        <p><strong>Nuestra Pasión por la Calidad.</strong></p>
+        <p>
+          La calidad es fundamental en Las super arepas andinas
+          <span class="extra-text" style="display: none;">
+            usamos los mejores ingredientes, sin aditivos, siguiendo recetas tradicionales.
+          </span>
+          <a href="#" class="toggle-link" onclick="toggleText(event)">más</a>
+        </p>
+      </div>
+
+      <div class="image-item">
+        <img src="./img/img27.png" alt="Origen Andino">
+        <p><strong>El Origen de la Arepa Andina.</strong></p>
+        <p>
+          Las arepas andinas tienen raíces profundas
+          <span class="extra-text" style="display: none;">
+            en la cultura indígena y mestiza, con harina de trigo como base tradicional.
+          </span>
+          <a href="#" class="toggle-link" onclick="toggleText(event)">más</a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="text-image-section">
+      <img src="./img/barnner.png" alt="Compromiso">
+      <div>
+        <h2>Compromiso con la Tradición.</h2>
+        <p>Nuestra misión es ofrecer arepas de harina de trigo andinas que celebren la cultura y la tradición de nuestra tierra...</p>
+        <a class="btn" href="./compromiso.html">Descubre más</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Las Super Arepas Andinas. Diseñado por [Yorman Varela].
+  </footer>
+
+  <script>
+    function toggleText(event) {
+      event.preventDefault();
+      const link = event.target;
+      const container = link.closest("p");
+      const extraText = container.querySelector(".extra-text");
+
+      if (extraText.style.display === "none") {
+        extraText.style.display = "inline";
+        link.textContent = " menos";
+      } else {
+        extraText.style.display = "none";
+        link.textContent = "más";
+      }
+    }
+  </script>
+</body>
+</html>

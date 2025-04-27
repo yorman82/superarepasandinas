@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Las Super Arepas Andinas</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!--<script defer src="js/menu.js"></script>-->
+ 
+</head>
+<body>  
+  <header class="responsive-banner">  
+</header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="quienes_somos.html">Quienes Somos</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main class="container">
+    <div class="title-section">
+      <h1>Las Super Arepas Andinas, el otro pan diario de Venezuela</h1>
+      <h2>La Tradición de Nuestras Arepas.</h2>
+      <p>Descubre la esencia de nuestras arepas andinas</p>
+    </div>
+    
+    <div class="image-grid">
+
+      <div class="image-item">
+        <img src="./img/img25.jpg" alt="Origen">
+        <p><strong>Arepa de Pollo al Estilo Andino.</strong></p>
+        <p>
+          Deléitate con una rica arepa rellena de pollo,
+          <span class="extra-text" style="display: none;">
+            sazonado con especias tradicionales y acompañado de una salsa especial. Cada bocado es una explosión de sabores que te transportará a los Andes.
+          </span>
+          <a href="#" class="toggle-link" onclick="toggleText(event)">más</a>
+        </p>
+      </div>
+
+      <div class="image-item">
+        <img src="./img/img26.jpg" alt="Calidad">
+        <p><strong>Arepa Andina Clásica.</strong></p>
+        <p>
+          Esta deliciosa arepa de harina de trigo
+          <span class="extra-text" style="display: none;">
+            rellena con carne jugosa, queso derretido y vegetales frescos. Perfecta para cualquier momento del día.
+          </span>
+          <a href="#" class="toggle-link" onclick="toggleText(event)">más</a>
+        </p>
+      </div>
+
+      <div class="image-item">
+        <img src="./img/img24.jpg" alt="Origen Andino">
+        <p><strong>Arepa Mixta.</strong></p>
+        <p>
+          Una combinación perfecta de sabores,
+          <span class="extra-text" style="display: none;">
+            con carne mechada, pollo y queso en una deliciosa arepa de trigo.
+          </span>
+          <a href="#" class="toggle-link" onclick="toggleText(event)">más</a>
+        </p>
+      </div>
+
+    </div>
+
+    <section class="main-section">
+      <h2>Sabor Vegetal</h2>
+      <h4>Deliciosas arepas sin carne, llenas de frescura y sabor.</h4>
+
+      <div class="arepa-item">
+        <img src="./img/img15.jpg" alt="Arepa de Champiñones">
+        <div class="arepa-info">
+          <h3>Arepa rellena con aguacate</h3>
+          <p>Rellena de aguacate, cebolla, tomate y crema de aguacate. Ideal para los amantes de sabores intensos y naturales.</p>
+        </div>
+      </div>
+
+      <div class="arepa-item">
+        <img src="./img/img9.jpg" alt="Arepa de Queso y Espinacas">
+        <div class="arepa-info">
+          <h3>Arepa rellena de Queso y Espinacas o con ensalada</h3>
+          <p>Queso suave con frescor de espinacas o ensalada fresca. Nutritiva y sabrosa a cualquier hora.</p>
+        </div>
+      </div>
+
+      <div class="arepa-item">
+        <img src="./img/img23.jpg" alt="Arepa de Caraotas Negras">
+        <div class="arepa-info">
+          <h3>Arepa andina rellena de Frijoles Negros</h3>
+          <p>Frijoles negros sazonados y salsa picante. Ideal para una comida completa.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="back-link">
+      <a class="btn" href="index.html">Volver al inicio</a>
+    </div>
+  </main>
+  
+   <script>
+    function toggleText(event) {
+      event.preventDefault();
+      const link = event.target;
+      const container = link.closest("p");
+      const extraText = container.querySelector(".extra-text");
+
+      if (extraText.style.display === "none") {
+        extraText.style.display = "inline";
+        link.textContent = " menos";
+      } else {
+        extraText.style.display = "none";
+        link.textContent = "más";
+      }
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Las Super Arepas Andinas. Diseñado por [Yorman Varela].</p>
+  </footer>
+</body>
+</html>
